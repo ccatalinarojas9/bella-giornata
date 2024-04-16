@@ -182,11 +182,10 @@ body{
 }
 .principal{
     background-image: url("../assets/img/foto-pagina-principal.png");
-    min-width: 1440px;
-    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-width: 1440px;
     height: 90vh;
     position: relative;
 }
@@ -729,9 +728,10 @@ footer{
 
 .contenidoCafe{
     background-image: url("../assets/img/mapaEjeC.png");
-    min-width: 1440px;
+    max-width: 100%;
+    height: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
 }
 .parrafoCafe p{
     text-decoration: none;

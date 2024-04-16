@@ -1,12 +1,12 @@
-### Proyecto-PreEntrega2
+### Proyecto-PreEntrega3
 ###  BellaGiornata
 ##### CoderHouse
 
 
->Segunda pre entrega de mi proyecto BellaGiornara utilizando las respectivas herramientas vistas en clase de Desarrollo web.
+>Tercera pre entrega de mi proyecto BellaGiornara utilizando las respectivas herramientas vistas en clase de Desarrollo web.
 
 
 
-Catalina Rojas Gómez
+Catalina-Rojas-Gómez
 
 MuchasGracias
