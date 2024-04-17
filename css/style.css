@@ -1,1413 +1,608 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #faedee;
-    min-width:1440px;
-    width: 100%;
-    height: 85px;
-    background-color: #f6cacb;
-    position:sticky;
-    top:0;
-    left: 0;
-    color: #1f6c1b;
-    flex-wrap: wrap;
-    align-items: center;
-    z-index: 1112;  
-}
-.razonSocial{ 
-    text-decoration: none;
-    font-family: "Oooh Baby", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #1f6c1b;
-    font-size: 50px;
-    padding-left: 50px;
-    margin-top: 15px;
-    position: relative;
-    bottom: 20px;
-    
-}
-
-.razonSocial::first-letter{
-    font-size: 53px;
-}
-
-.subRazonS{
-    text-decoration: none;
-    color: black;
-    font-family: "Questrial", sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    padding-left: 50px;
-    position: relative;
-    bottom: 43px;
-}
-
-.navBar{
-    display: flex;
-    gap: 30px;
-    list-style-type: none;
-    padding-right: 50px;
-}
-.navBar li a{
-    display: flex;
-    text-decoration: none;
-    color: #1f6c1b;
-    font-family: "Questrial", sans-serif;
-    font-size: 28px; 
-    margin-top: 30px;
-    position: relative;
-    bottom: 20px;
-    
-}
-
-@media (max-width:1345px){
-    header{
-    justify-content:space-around ;
-    padding: 5px;
-    height: min-content;
-    }
-    .navBar{
-        padding-top: 50px;
-    }
-}
-@media (max-width:1024){
-
-}
-@media (max-width:768px){
-    header{
-        height: auto;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        
-    }
-    .inicio-div h1{
-        font-size: 60px;
-    }
-    .razonSocial{
-        padding-left: 0;
-        margin-top: 0;
-        bottom: 0;
-        padding-top: 0px;
-        padding-right: 800px;
-        height: 90px;
-    }
-
-    .razonSocial::first-letter{
-        font-size: 73px;
-    }
-    .subRazonS{
-        position: absolute;
-        padding-bottom: 40px;
-        padding-left: 8px;
-        font-size: 16px;
-    }
-    .navBar{
-        gap: 60px;
-        height: 60px;
-        padding-bottom: 40px;
-    }
-    .navBar li a{
-        font-size: 35px;
-        margin: 0;
-        padding: 0
-    }
-
-
-}
-@media (max-width:425px){
-    .razonSocial{
-        padding-right: 830px;
-        font-size: 75px;
-        height: 100px;
-    }
-    .inicio-div h1{
-        font-size: 65px;
-    }
-    .razonSocial::first-letter{
-        font-size: 74px;
-    }
-    .subRazonS{
-        position: absolute;
-        padding-bottom: 40px;
-        padding-left: 8px;
-        font-size: 20px;
-    }
-    .navBar li a{
-    font-size: 40px;
-}
-
-}
-@media(max-width:320px){
-    .razonSocial{
-        font-size: 75px;
-        height: 110px;
-        padding-right: 650px;
-    }
-    .inicio-div h1{
-        font-size: 70px;
-    }
-    .razonSocial::first-letter{
-        font-size: 76px;
-    }
-    .subRazonS{
-        padding-bottom: 155px;
-        font-size: 20px;
-    }
-    .navBar{
-        width: 80%;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 200px;
-        row-gap: 18px;
-        padding-bottom:40px;
-        margin-left: 80px;
-        
-    }
-    .navBar li a{
-    font-size: 50px;
-}
-}
-
-body{
-    background-color: #faedee;
-}
-.principal{
-    background-image: url("../assets/img/foto-pagina-principal.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-width: 1440px;
-    height: 90vh;
-    position: relative;
-}
-.principal div.bienvenida{ 
-    background-color: #9d7693c1;
-    padding: 30px;
-    border-radius: 20px;
-    position: absolute;
-    top: 100px;
-    left: 80px;
-    width: 440px;
-    height: 180px;
-    text-align: center;
-}
-
-.principal div{
-    background-color: #9c7591c1;
-    padding: 30px;
-    border-radius: 20px;
-    font-weight: 100;
-    position: absolute;
-    left: 800px;
-    top: 410px;
-    width: 445px;
-    height: 270px;
-    font-family: "Questrial", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 26px;
-    color: white;
-    text-align: center;
-    
-}
-.presentacion li{
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-right: 200px;
-    padding-left: 200px;
-    color: #a2b99a;
-    text-align: center;
-    font-family: "Questrial", sans-serif;
-    font-size: 30px;
-    width: 1440px;
-    }
-
-.presentacion .par2{
-    padding-top: 15px;
-    padding-bottom:50px;
-}
-
-.imagen-contenedor1{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 300px 300px 300px 300px ;
-    grid-template-rows: 250px 250px;
-    width: 1440px;
-
-}
-.imagen-contenedor1 img{
-    height: 250px;
-    width: 300px;
-    object-fit: cover;
-}
-
-.presentacion2{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    padding: 50px 200px 50px 200px;
-    color: #a2b99a;
-    text-align: center;
-    font-family: "Questrial", sans-serif;
-    font-size: 30px;
-    width: 1440px;
-
-}
-.expMenu{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 450px 300px 450px ;
-    grid-template-rows: 450px;
-    width: 1440px;
-    padding-bottom: 150px;
-
-}
-.expMenu img{
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-}
-
-.invitacionMenu{
-    background-image: url("../assets/img/exp2.png");
-    background-size: 301px;
-}
-
-.invitacionMenu p{
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 90px;
-    font-family: "Questrial", sans-serif;
-    color: #162421;
-    font-size: 30px;
-    font-weight: 100;
-}
-.explora-menu{
-    position: relative;
-    top: 60px;
-}
-
-.menuinv a{
-    color: black;
-    text-decoration: none;
-    position: relative;
-    bottom: 60px;
-}
-
-.finalMain{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    font-family: "Questrial", sans-serif;
-    color: #a2b99a;
-    font-size: 30px;
-    position: relative;
-    bottom: 130px;
-    padding-left: 350px;
-    padding-right: 350px;
-    text-align: center;
-    padding-top: 50px;
-    width: 1440px;
-
-}
-@media (max-width:1024px){
-    .principal{
-        height: 110vh;
-    }
-
-}
-@media (max-width:1208px){
-    .principal{
-        height: 110vh;
-    }
-}
-@media (max-width:768px) {
-    .principal{
-        height: 140vh;
-    }
-    .principal div.bienvenida{
-        height: 220px;
-    }
-    .principal div{
-        font-size: 30px;
-        height: 320px;
-    }
-    .presentacion li{
-        font-size: 34px;
-    }
-    .presentacion2{
-        font-size: 34px;
-    }
-    .finalMain{
-        font-size: 34px;
-    }
-}
-@media (max-width:425px){
-    .principal{
-        height: 160vh;
-    }
-    .principal div.bienvenida{
-        height: 320px;
-    }
-    .principal div{
-        font-size: 40px;
-        height: 510px;
-    }
-    .presentacion li{
-        font-size: 40px;
-    }
-    .presentacion2{
-        font-size: 40px;
-        padding-left: 180px;
-        padding-right: 180px;
-    }
-    .finalMain{
-        font-size: 40px;
-        padding-left: 200px;
-        padding-right: 200px;
-
-    }
-}
-footer{
-    background-color: #a2b99a;
-    min-height: 717px;
-    min-width: 1440px;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-    bottom: 0;
-}
-
-
-.titulo-footer{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    padding:20px;
-    padding-left:200px;
-    font-size:32px;
-}
-
-.ubicacion img{
-    width: 500px;
-    height: 400px;
-}
-.ubicacion iframe{
-    width: 500px;
-    height: 400px;
-}
-
-.ubicacion{
-    display: flex;
-    justify-content: center;
-    gap: 1.875rem;
-}
-
-.infoContacto{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 50px;
-    padding-top:25px ;
-}
-
-.infoContacto li{
-    padding:4px;
-}
-
-.infoContacto h4{
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 24px;
-    padding-bottom: 15px;
-    
-}
-.infoContacto div{
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 24px;
-    list-style-type: none;
-
-}
-.suscribete{
-    font-family: "Questrial", sans-serif;
-    text-align: center;
-    color: black;
-    padding: 20px 500px;
-    font-size: 20px;
-}
-.unete{
-    font-family: "Questrial", sans-serif;
-    text-align: center;
-    color: white;
-    padding: 0px 200px;
-    padding-bottom: 8px;
-    font-size: 24px;
-    font-weight: 200;
-}
-
-.correoJoin{
-    display: flex;
-    justify-content: center;
-}
-
-.correoJoin input{
-    font-size: 36px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    background-color: white;
-    height: 30px;
-}
-.correoJoin input::placeholder{
-    font-size: 16px;
-    position: relative;
-    bottom: 8px;
-    left: 6px;
-}
-
-.joinButton{
-    border: 1px solid black;
-    background-color: #1f6d1b;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: white;
-    font-size: 14px;
-    font-weight: 100;
-    text-align: center;
-    width: 50px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.joinButton:hover{
-    background-color: #0f680b;
-}
-
-.joinButton:focus{
-    background-color: rgba(255, 255, 0, 0.592);
-    color: black;
-    outline: none;
-}
-
-.finalText{
-    list-style-type: none;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: #1f6c1b;
-    font-weight: 100;
-    font-size: 25px;
-    padding-top: 10px;
-}
-.razonSfinal{
-    font-family: "Oooh Baby", cursive;
-    font-size: 32px;
-    font-weight: 100;
-}
-.correoFinal{
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 20px;
-}
-
-@media (max-width:768px){
-    .titulo-footer{
-        font-size: 40px;
-        padding-left: 66px;
-    }
-    .infoContacto div{
-        font-size: 28px;
-    }
-    .infoContacto h4{
-        font-size: 28px;
-    }
-    .suscribete{
-        font-size: 26px;
-    }
-    .unete{
-        font-size: 28px;
-    }
-    .razonSocial{
-        font-size: 36px;
-    }
-    .correoFinal{
-        font-size: 20px;
-    }
-    .ubicacion iframe{
-        width: 640px;
-        height: 450px;
-    }
-    .ubicacion img{
-        width: 640px;
-        height: 450px;
-    }
-    .correoJoin input{
-        height: 40px;
-        width: 500px;
-    }
-    .correoJoin button{
-        height: 40px;
-        width: 100px;
-    }
-    .joinButton{
-        font-size: 24px;
-    }
-    .correoJoin input::placeholder{
-        font-size: 24px;
-        position: relative;
-        bottom: 3px;
-    }
-
-}
-
-@media (max-width:600px){
-    .ubicacion{
-        display: flex;
-        flex-direction: column;
-        padding-left: 200px;
-        
-    }
-    .titulo-footer{
-        font-size: 42px;
-        padding-left: 200px;
-
-    }
-    .infoContacto{
-        flex-wrap: wrap;
-        width:93%;
-    }
-    .infoContacto h4{
-        font-size: 35px;
-    }
-    .infoContacto li{
-        font-size: 35px;
-    }
-    .contacto{
-        padding-right: 460px;
-    }
-    .suscribete{
-        font-size: 30px;
-    }
-    .unete{
-        font-size: 35px;
-    }
-    .finalText{
-        font-size: 30px;
-    }
-    .razonSfinal{
-        font-size: 45px;
-    }
-    .correoFinal{
-        font-size: 26px;
-    }
-    .correoJoin input{
-        height: 50px;
-        width: 600px;
-    }
-    .correoJoin button{
-        height: 50px;
-        width: 100px;
-    }
-    .joinButton{
-        font-size: 30px;
-    }
-    .correoJoin input::placeholder{
-        font-size: 30px;
-        position: relative;
-        bottom: 3px;
-    }
-
-}
-
-@media (max-width:425px){
-    .ubicacion{
-        padding-left: 250px;
-    }
-    .ubicacion iframe{
-        width: 950px;
-        height: 600px;
-    }
-    .ubicacion img{
-        width:950px;
-        height: 600px;
-    }
-    .titulo-footer{
-        font-size: 60px;
-        padding-left: 250px;
-    }
-    .infoContacto{
-        flex-wrap: nowrap;
-        flex-direction: column;
-        padding-left: 250px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .infoContacto h4{
-        font-size: 50px;
-    }
-    .infoContacto li{
-        font-size: 50px;
-    }
-    .suscribete{
-        font-size: 45px;
-        padding-left: 350px;
-        padding-right: 350px;
-    }
-    .unete{
-        font-size: 48px;
-    }
-    .razonSfinal{
-        font-size: 60px;
-    }
-
-    .finalText{
-        font-size: 50px;
-    }
-    .correoFinal{
-        font-size: 35px;
-    }
-    .correoJoin input{
-        height: 70px;
-        width: 800px;
-    }
-    .correoJoin button{
-        height: 70px;
-        width: 200px;
-    }
-    .joinButton{
-        font-size: 40px;
-    }
-    .correoJoin input::placeholder{
-        font-size: 40px;
-        position: relative;
-        bottom: 3px;
-    }
-
-
-}
-.cafeEncabezado{
-    background-image: url("../assets/img/pagCafeEncabezado\ .png");
-    min-width: 1440px;
-    height: 30vh;
-    background-position: center;
-    background-size: cover;
-}
-
-.cafeEncabezado h2{
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-size: 34px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 120px;
-}
-
-.contenidoCafe{
-    background-image: url("../assets/img/mapaEjeC.png");
-    max-width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-position:center;
-}
-.parrafoCafe p{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    font-family: "Questrial", sans-serif;
-    font-weight: 100;
-    color: black;
-    font-size: 28px;
-    text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
-    min-width: 1440px;
-}
-
-.parCafe1{
-    padding: 70px 350px 14px 350px;
-}
-
-.parCafe3{
-    padding: 14px 350px 70px 350px;
-}
-@media (max-width:1024px){
-    .parrafoCafe p{
-        padding-left: 250px;
-        padding-right: 250px;
-        font-size: 29px;
-    }
-
-}
-@media(max-width:768px){
-    .cafeEncabezado h2{
-        font-size: 38px;
-        top: 98px;
-    }
-    .parrafoCafe p{
-        padding-left: 200px;
-        padding-right: 200px;
-        font-size: 34px;
-    }
-}
-@media (max-width:600px){
-    .cafeEncabezado h2{
-        font-size: 42px;
-        top: 98px;
-    }
-    .parrafoCafe p{
-        padding-left: 170px;
-        padding-right: 170px;
-        font-size: 38px;
-    }
-
-}
-@media (max-width:425px){
-    .cafeEncabezado h2{
-        font-size: 46px;
-        top: 98px;
-    }
-    .parrafoCafe p{
-        padding-left: 140px;
-        padding-right: 140px;
-        font-size: 40px;
-    }
-
-}
-.main-menu{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.columna1menu{
-    width: 100%;
-    text-align: center;
-    padding-top: 100px;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    padding-bottom: 200px;
-    line-height: 20px;
-    
-}
-
-.columna2menu{
-    width: 100%;
-    grid-column: 2 / 3;
-    text-align: center;
-    padding-top: 100px;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    padding-bottom: 200px;
-    line-height: 20px;
-}
-.tituloMenu{
-    font-size: 22px;
-    color: #876287;
-    font-weight: 100;
-}
-
-.tituloMenu1{
-    font-size: 22px;
-    color: #876287;
-    font-weight: 100;
-    padding-top: 80px;
-}
-.optBebidasCalientes{
-    width: 450px;
-    padding-left: 100px;
-    padding-bottom: 50px;
-    position: relative;
-    left: 70px;
-    
-}
-.brunchMenu{
-    position: relative;
-    left: 20px;
-    font-size: 16px;
-    bottom: 40px;
-}
-.brunchMenu h4{
-    color: #1f6c1b;
-    font-weight: 100;
-}
-.optBebidasCalientes{
-    font-size: 13px;
-}
-.brunchMenu p{
-    font-size: 14px;
-}
-
-.optBebidasFrias{
-    width: 400px;
-    padding-bottom: 50px;
-    font-size: 13px;
-    position: relative;
-    left: 145px;
-}
-.brunchMenu1 h4{
-    color: #1f6c1b;
-    font-weight: 100;
-}
-.brunchMenu1 p{
-    font-size: 14px;
-}
-.brunchMenu1{
-    padding-top: 50px;
-    width: 400px;
-    position: relative;
-    left: 145px;
-}
-.advComida{
-    color: red;
-    padding-top: 150px;
-    position: relative;
-    right: 350px;
-}
-
-.columna1menu img{
-    width: 50px;
-    height: 50px;
-}
-
-.columna2menu img{
-    width: 42px;
-    height: 42px;
-}
-
-.imgBrunchD img{
-    width: 35px;
-    height: 35px;
-    position: relative;
-    top: 70px;
-    right: 20px;
-}
-.lineaMenu1{
-    height: 5px;
-}
-
-hr{
-    height: 2px;
-    width: 500px;
-    color: #a2b99a;
-    background-color: #a2b99a;
-    position: relative;
-    left: 90px;
-}
-.hr1 hr{
-    border-left: #a2b99a;
-    width: 2px;
-    height: 600px;
-    position: absolute;
-    left: 728px;
-}
-.hr2 hr{
-    border-left: #a2b99a;
-    width: 2px;
-    height: 950px;
-    position: absolute;
-    left: 728px;
-    top: 900px;
-}
-@media (max-width:1024px){}
-.recTitulo{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 32px;
-    text-align: center;
-    color: #876287;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    min-width: 1440px;
-    width: 100%;
-}
-
-.recomendaiones-contenido{
-    display: grid;
-    grid-template-columns: 300px 300px 300px ;
-    grid-template-rows: 390px 390px;
-    min-width: 1440px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    align-content: center;
-    grid-column-gap: 80px;
-    grid-row-gap: 50px;
-    grid-template-areas: 
-    "img1 img2 img3"
-    "img4 img5 img6"
-    ;
-}
-
-.rec-1{
-    grid-area: img1;
-}
-.rec-2{
-    grid-area: img2;
-}
-.rec-3{
-    grid-area: img3;
-}
-.rec-4{
-    grid-area: img4;
-}
-.rec-5{
-    grid-area: img5;
-}
-.rec-6{
-    grid-area: img6;
-}
-
-.recomendaiones-contenido img{
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-}
-
-.recomendaiones-contenido h5{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 22px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-@media (max-width:768px){
-    .recTitulo{
-        font-size: 38px;
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-    .recomendaiones-contenido{
-        display: grid;
-        grid-template-columns: 400px 400px;
-        grid-template-rows: 420px 420px 420px;
-        min-width: 1440px;
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 60px;
-        align-content: center;
-        grid-column-gap: 95px;
-        grid-row-gap: 90px;
-        grid-template-areas: 
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        ;
-    }
-    .recomendaiones-contenido img{
-        width: 100%;
-        height: 330px;
-        object-fit: cover;
-    }
-    .recomendaiones-contenido h5{
-        font-size:30px;
-    }
-}
-@media (max-width:550px){
-    .recTitulo{
-        font-size: 44px;
-    }
-    .recomendaiones-contenido{
-        display: grid;
-        grid-template-columns: 500px 500px;
-        grid-template-rows: 490px 490px 490px;
-        min-width: 1440px;
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 60px;
-        align-content: center;
-        grid-column-gap: 95px;
-        grid-row-gap: 90px;
-        grid-template-areas: 
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        ;
-    }
-    .recomendaiones-contenido img{
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-    .recomendaiones-contenido h5{
-        font-size:38px;
-    }
-}
-@media (max-width:425px){
-    .recTitulo{
-        font-size: 50px;
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-    .recomendaiones-contenido{
-        display: grid;
-        grid-template-columns: 900px;
-        grid-template-rows: 700px;
-        min-width: 1440px;
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 60px;
-        align-content: center;
-        grid-row-gap: 110px;
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6"
-        ;
-    }
-    .recomendaiones-contenido img{
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-    }
-    .recomendaiones-contenido h5{
-        font-size:50px;
-        padding-top: 40px;
-    }
-}
-.main-reservas{
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 100px 90px 90px 200px 100px;
-    grid-column-gap: 60px;
-    grid-row-gap: 30px;
-    min-width: 1440px;
-    /*width:100%;*/
-    justify-content: center;
-    align-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    grid-template-areas: 
-    "titulo titulo"
-    "name last-name" 
-    "phone email" 
-    "descrip descrip" 
-    "button button" 
-    ;
-}
-
-.div-name{
-    grid-area: name;
-}
-.div-lastname{
-    grid-area: last-name;
-}
-.div-phone{
-    grid-area: phone;
-}
-.div-email{
-    grid-area: email;
-}
-.div-description{
-    grid-area: descrip;
-}
-.resButton{
-    grid-area: button;
-}
-.resTitulo{
-    display: grid;
-    grid-area: titulo;
-    align-content: center;
-    justify-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 30px;
-    font-weight: 100;
-    padding-bottom: 58px;
-}
-
-.main-reservas .div-name{
-    display: grid;
-    align-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 26px;
-    
-}
-
-.main-reservas .div-lastname{
-    display: grid;
-    align-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 26px;
-}
-
-.main-reservas .div-phone{
-    display: grid;
-    align-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 26px;
-}
-
-.main-reservas .div-email{
-    display: grid;
-    align-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 26px;
-
-}
-
-.main-reservas .div-description{
-    display: grid;
-    align-content: center;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    font-size: 26px;
-}
-
-.main-reservas .resButton{
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.div-name input{
-    display: grid;
-    border: none;
-}
-
-.main-reservas input{
-    border: none;
-    padding-top: 10px;
-    padding: 10px 0px;
-    border-radius: 20px;
-}
-.main-reservas .div-description input{
-    padding-bottom: 80px;
-}
-
-.main-reservas button{
-    border: none;
-    background-color: #f89265;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    color: black;
-    border-radius: 20px;
-    font-size: 26px;
-    font-weight: 100;
-    width: 1060px;
-    height: 60px;
-}
-
-.main-reservas button:hover{
-    background-color: #f77842;
-}
-
-.main-reservas button:focus{
-    background-color: #f5540e;
-    color: white;
-    outline: none;
-}
-
-@media (max-width:768px){
-    .main-reservas{
-        grid-template-columns: 600px 600px;
-        width: 100%;
-        justify-content: center;
-        height: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        grid-row-gap: 50px;
-    }
-    .main-reservas button{
-        width: 1250px;
-        font-size: 30px;
-        height: 75px;
-    }
-    .resTitulo{
-        font-size: 40px;
-    }
-
-    .main-reservas .div-name {
-        font-size: 32px;
-    }
-    .main-reservas .div-lastname{
-        font-size: 32px;
-    }
-    .main-reservas .div-phone{
-        font-size: 32px;
-    }
-    .main-reservas .div-email{
-        font-size: 32px;
-    }
-    .main-reservas .div-description{
-        font-size: 32px;
-    }
-    .div-name input{
-        height: 50px;
-    }
-    .div-lastname input{
-        height: 50px;
-    }
-    .div-phone input{
-        height: 50px;
-    }
-    .div-email input{
-        height: 50px;
-    }
-    .div-description input{
-        height: 50px;
-    }
-}
-
-@media (max-width:600px){
-    .main-reservas{
-        grid-template-columns: 900px;
-        grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
-        grid-column-gap: 0;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        grid-template-areas: 
-        "titulo"
-        "name"
-        "last-name"
-        "phone"
-        "email"
-        "descrip"
-        "button"
-        ;
-    }
-    .main-reservas button{
-        width: 900px;
-    }
-    .resTitulo{
-        font-size: 50px;
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-    .main-reservas .div-name {
-        font-size: 36px;
-    }
-    .main-reservas .div-lastname{
-        font-size: 36px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-phone{
-        font-size: 36px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-email{
-        font-size: 36px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-description{
-        font-size: 36px;
-        padding-top: 80px;
-    }
-    .div-name input{
-        height: 60px;
-    }
-    .div-lastname input{
-        height: 60px;
-    }
-    .div-phone input{
-        height: 60px;
-    }
-    .div-email input{
-        height: 60px;
-    }
-    .div-description input{
-        height: 60px;
-    }
-}
-
-@media (max-width:425px){
-    .main-reservas{
-        grid-template-columns: 1100px;
-        grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
-        grid-column-gap: 0;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin: 0;
-        ;
-    }
-    .main-reservas button{
-        width: 1100px;
-        font-size: 40px;
-    }
-    .resTitulo{
-        font-size: 60px;
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-    .main-reservas .div-name {
-        font-size: 42px;
-    }
-    .main-reservas .div-lastname{
-        font-size: 42px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-phone{
-        font-size: 42px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-email{
-        font-size: 42px;
-        padding-top: 80px;
-    }
-    .main-reservas .div-description{
-        font-size: 42px;
-        padding-top: 80px;
-    }
-    .div-name input{
-        height: 70px;
-    }
-    .div-lastname input{
-        height: 70px;
-    }
-    .div-phone input{
-        height: 70px;
-    }
-    .div-email input{
-        height: 70px;
-    }
-    .div-description input{
-        height: 70px;
-    }
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #faedee;
+  min-width: 1440px;
+  width: 100%;
+  height: 85px;
+  background-color: #f6cacb;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: #1f6c1b;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1112;
+}
+header h1 {
+  text-decoration: none;
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #1f6c1b;
+  font-size: 50px;
+  padding-left: 50px;
+  margin-top: 15px;
+  position: relative;
+  bottom: 20px;
+}
+header h1::first-letter {
+  font-size: 53px;
+}
+header h3 {
+  text-decoration: none;
+  color: black;
+  font-family: "Questrial", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  padding-left: 50px;
+  position: relative;
+  bottom: 43px;
+}
+header .navBar {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  padding-right: 50px;
+}
+header .navBar li a {
+  display: flex;
+  text-decoration: none;
+  color: #1f6c1b;
+  font-family: "Questrial", sans-serif;
+  font-size: 28px;
+  margin-top: 30px;
+  position: relative;
+  bottom: 20px;
+}
+
+body {
+  background-color: #faedee;
+}
+
+.principal {
+  background-image: url("../assets/img/foto-pagina-principal.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 1440px;
+  height: 90vh;
+  position: relative;
+}
+.principal div {
+  background-color: rgba(156, 117, 145, 0.7568627451);
+  padding: 30px;
+  border-radius: 20px;
+  font-weight: 100;
+  position: absolute;
+  left: 800px;
+  top: 410px;
+  width: 445px;
+  height: 270px;
+  font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+.principal .bienvenida {
+  background-color: rgba(157, 118, 147, 0.7568627451);
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 440px;
+  height: 180px;
+  text-align: center;
+}
+
+.presentacion {
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 50px;
+  color: #a2b99a;
+  text-align: center;
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  width: 100%;
+}
+
+.imagen-contenedor1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px;
+  width: 1440px;
+}
+.imagen-contenedor1 img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.presentacion2 {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 50px 200px 50px 200px;
+  color: #a2b99a;
+  text-align: center;
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  width: 1440px;
+}
+
+.expMenu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 450px 300px 450px;
+  grid-template-rows: 450px;
+  width: 100%;
+  padding-bottom: 150px;
+}
+.expMenu img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.expMenu .invitacionMenu {
+  background-image: url("../assets/img/exp2.png");
+  background-size: 301px;
+}
+.expMenu p {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 90px;
+  font-family: "Questrial", sans-serif;
+  color: #162421;
+  font-size: 30px;
+  font-weight: 100;
+}
+.expMenu .explora-menu {
+  position: relative;
+  top: 60px;
+}
+.expMenu .menuinv a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  bottom: 60px;
+}
+
+.finalMain {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-family: "Questrial", sans-serif;
+  color: #a2b99a;
+  font-size: 30px;
+  position: relative;
+  bottom: 130px;
+  padding-left: 350px;
+  padding-right: 350px;
+  text-align: center;
+  padding-top: 50px;
+  width: 1440px;
+}
+
+footer {
+  background-color: #a2b99a;
+  min-height: 717px;
+  min-width: 1440px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+footer h2 {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  padding: 20px;
+  padding-left: 200px;
+  font-size: 32px;
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+}
+footer section img, footer section iframe {
+  width: 500px;
+  height: 400px;
+}
+
+address {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 25px;
+}
+address h4 {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+address div p {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;
+  padding: 4px;
+}
+
+article .suscribete {
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  color: black;
+  padding: 20px 500px;
+  font-size: 20px;
+}
+article .suscribete .unete {
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 0px 200px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  font-weight: 200;
+}
+article .correoJoin {
+  display: flex;
+  justify-content: center;
+}
+article .correoJoin input {
+  font-size: 36px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  height: 30px;
+}
+article .correoJoin input::placeholder {
+  font-size: 16px;
+  position: relative;
+  bottom: 8px;
+  left: 6px;
+}
+article .correoJoin button {
+  border: 1px solid black;
+  background-color: #1f6d1b;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+article .correoJoin button:hover {
+  background-color: #054302;
+}
+article .correoJoin button:focus {
+  background-color: rgba(255, 255, 0, 0.592);
+  color: black;
+  outline: none;
+}
+article .finalText {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: #1f6c1b;
+  font-weight: 100;
+  font-size: 25px;
+  padding-top: 10px;
+}
+article .finalText p:first-child {
+  font-family: "Oooh Baby", cursive;
+  font-size: 32px;
+  font-weight: 100;
+}
+article .finalText p:last-child {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.cafeEncabezado {
+  background-image: url("../assets/img/pagCafeEncabezado .png");
+  min-width: 1440px;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+.cafeEncabezado h2 {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+}
+
+.contenidoCafe {
+  background-image: url("../assets/img/mapaEjeC.png");
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contenidoCafe p {
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-weight: 100;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 500px;
+  min-width: 1440px;
+}
+
+.main-menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.main-menu h4 {
+  color: #1f6c1b;
+  font-weight: 100;
+}
+.main-menu .columna1menu, .main-menu .columna2menu, .main-menu .columna3menu, .main-menu .columna4menu {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 200px;
+  line-height: 20px;
+}
+.main-menu h2 {
+  font-size: 22px;
+  color: #876287;
+  font-weight: 100;
+}
+.main-menu .optBebidasCalientes, .main-menu .optBebidasFrias {
+  width: 450px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  left: 70px;
+  font-size: 13px;
+}
+.main-menu .brunchMenu {
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+  bottom: 40px;
+}
+.main-menu .columna1menu img {
+  width: 50px;
+  height: 50px;
+}
+.main-menu .columna2menu img {
+  width: 42px;
+  height: 42px;
+}
+.main-menu .imgBrunchD img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 70px;
+  right: 20px;
+}
+.main-menu .lineaMenu1 {
+  height: 5px;
+}
+.main-menu hr {
+  height: 2px;
+  width: 500px;
+  color: #a2b99a;
+  background-color: #a2b99a;
+  position: relative;
+  left: 90px;
+}
+.main-menu .hr1 hr {
+  border-left: #a2b99a;
+  width: 2px;
+  height: 600px;
+  position: absolute;
+  left: 728px;
+}
+.main-menu .hr2 hr {
+  border-left: #a2b99a;
+  width: 2px;
+  height: 950px;
+  position: absolute;
+  left: 728px;
+  top: 900px;
+}
+
+.advComida {
+  color: red;
+}
+
+.recTitulo {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: center;
+  color: #876287;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  min-width: 1440px;
+  width: 100%;
+}
+
+.recomendaiones-contenido {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 390px 390px;
+  min-width: 1440px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  align-content: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 50px;
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+}
+.recomendaiones-contenido img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.recomendaiones-contenido h5 {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.rec-1 {
+  grid-area: img1;
+}
+
+.rec-2 {
+  grid-area: img2;
+}
+
+.rec-3 {
+  grid-area: img3;
+}
+
+.rec-4 {
+  grid-area: img4;
+}
+
+.rec-5 {
+  grid-area: img5;
+}
+
+.rec-6 {
+  grid-area: img6;
+}
+
+.main-reservas {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 100px 90px 90px 200px 100px;
+  grid-column-gap: 60px;
+  grid-row-gap: 30px;
+  min-width: 1440px;
+  /*width:100%;*/
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-template-areas: "titulo titulo" "name last-name" "phone email" "descrip descrip" "button button";
+}
+.main-reservas h4 {
+  display: grid;
+  grid-area: titulo;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 58px;
+}
+.main-reservas div {
+  display: grid;
+  align-content: center;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: black;
+  font-size: 26px;
+}
+.main-reservas div input {
+  border: none;
+  padding-top: 10px;
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+.main-reservas button {
+  border: none;
+  background-color: #f89265;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  color: black;
+  border-radius: 20px;
+  font-size: 26px;
+  font-weight: 100;
+  width: 1060px;
+  height: 60px;
+}
+.main-reservas button:hover {
+  background-color: #f77842;
+}
+.main-reservas button:focus {
+  background-color: #f5540e;
+  color: white;
+  outline: none;
+}
+.main-reservas .div-description input {
+  padding-bottom: 80px;
+}
+
+.div-name {
+  grid-area: name;
+}
+
+.div-lastname {
+  grid-area: last-name;
+}
+
+.div-phone {
+  grid-area: phone;
+}
+
+.div-email {
+  grid-area: email;
+}
+
+.div-description {
+  grid-area: descrip;
+}
+
+.resButton {
+  grid-area: button;
+}
+
+/*# sourceMappingURL=style.css.map */
