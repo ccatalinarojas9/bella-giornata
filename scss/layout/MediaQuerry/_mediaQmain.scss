@@ -1,54 +1,150 @@
-@media (max-width:1024px){
-    .principal{
-        height: 110vh;
-    }
-}
+
 @media (max-width:1208px){
     .principal{
-        height: 110vh;
+        height: 105vh;
+        .teInvitamos{
+            position: relative;
+            top: 500px;
+        }
+    }
+    .presentacion{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .presentacion2{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .finalMain{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width:1024px){
+    .principal{
+        height: 120vh;
     }
 }
 @media (max-width:768px) {
     .principal{
-        height: 140vh;
-        font-size: 30px;
-        height: 320px;
+        div{
+            height: 350px;
+            font-size: 32px;
+        }
         .bienvenida{
-            height: 220px;
+            height: 250px;
+        }
+        .teInvitamos{
+            position: relative;
+            top: 600px;
         }
         
     }
-    .presentacion p{
-        font-size: 34px;
+    .presentacion{
+        font-size: 36px;
+        padding-right: 130px;
+        padding-left: 130px;
     }
     .presentacion2{
-        font-size: 34px;
+        font-size: 36px;
     }
     .finalMain{
-        font-size: 34px;
+        font-size: 36px;
+    }
+    .imagen-contenedor1{
+        display: grid;
+        grid-template-columns: 580px 580px;
+        grid-template-rows: 420px 420px 420px;
+        grid-template-areas: 
+        "img1 img5"
+        "img2 img6"
+        "img3 img7"
+        "img4 img8"
+        ;
+        img{
+            height:420px;
+            width: 580px;
+            object-fit: cover;
+        }
+    }
+    .expMenu{
+        display: grid;
+        grid-template-columns: 410px 300px 410px ;
+        grid-template-rows: 500px;
+        position: relative;
+        right: 20px;
+        object-fit: cover;
+        img{
+            height: 500px;
+        }
+        .invitacionMenu{
+            background-size: 340px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 45px;
+        }
+    }
+}
+@media (max-width: 640px){
+    .principal{
+        div{
+            width: 630px;
+            height: 280px;
+            left: 620px;
+            font-size: 35px;
+        }
+        .bienvenida{
+            width: 610px;
+            height: 216px;
+        }
+    }
+    .presentacion p{
+        font-size: 40px;
+    }
+    .presentacion2{
+        font-size: 40px;
+    }
+    .finalMain{
+        font-size: 40px;
     }
 }
 @media (max-width:425px){
     .principal{
-        font-size: 40px;
-        height: 510px;
-        height: 160vh;
+        height: 150vh;
+        div{
+            font-size: 48px;
+            height: 510px;
+            width: 800px;
+        }
         .bienvenida{
         height: 320px;
+        width: 800px;
+        left: 340px;
+        }
+        .teInvitamos{
+            top: 700px;
+            left: 340px;
         }
     }
     .presentacion p{
-        font-size: 40px;
+        font-size: 50px;
     }
     .presentacion2{
-        font-size: 40px;
+        font-size: 50px;
         padding-left: 180px;
         padding-right: 180px;
     }
     .finalMain{
-        font-size: 40px;
+        font-size: 50px;
         padding-left: 200px;
         padding-right: 200px;
+    }
+    .expMenu{
+        p{
+            font-size: 50px;
+        }
     }
 }
 
