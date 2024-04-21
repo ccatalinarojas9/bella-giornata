@@ -1,0 +1,104 @@
+@media (max-width:1345px){
+    header{
+        width: 1440px;
+        height: auto;
+    justify-content:space-around ;
+    padding: 5px;
+    height: min-content;
+    .navBar{
+        padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    header{
+        width: 1440px;
+        height: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        h1{
+            font-size: 60px;
+            padding-left: 0;
+            margin-top: 0;
+            bottom: 0;
+            padding-top: 0px;
+            padding-right: 800px;
+            height: 90px;
+            &:first-letter{
+                font-size: 73px;
+            }
+        }
+        h3{
+            position: absolute;
+            padding-bottom: 68px;
+            padding-left: 8px;
+            font-size: 16px;
+        }
+        .navBar{
+            gap: 60px;
+            position: relative;
+            bottom:4px;
+            li{
+                a{
+                    font-size: 34px;
+                }
+            }
+        }
+            
+    }
+
+@media (max-width:425px){
+    header{
+        h1{
+            padding-top: 16px;
+            padding-right: 830px;
+            font-size: 70px;
+            height: 100px;
+            &:first-letter{
+                font-size: 74px;
+            }
+        }
+        h3{
+            position: absolute;
+            padding-bottom: 65px;
+            padding-left: 8px;
+            font-size: 18px;
+        }
+        .navBar li a{
+            font-size: 40px;
+        }
+    }
+}
+@media(max-width:320px){
+    header{
+        height: 360px;
+        h1{
+            font-size: 90px;
+            height: 110px;
+            padding-right: 650px;
+            &:first-letter{
+                font-size: 92px;
+            }
+        }
+        h3{
+            padding-bottom: 159px;
+            font-size: 20px;
+        }
+        .navBar{
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 200px;
+            row-gap: 0px;
+            margin-left: 80px;
+            position: relative;
+            bottom: 20px;
+            
+        }
+        .navBar li a{
+        font-size: 50px;
+        }
+    }
+}
+}

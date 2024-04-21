@@ -1,0 +1,196 @@
+@media (max-width:768px){
+    footer{
+        h2{
+            font-size: 40px;
+            padding-left: 66px;
+        }
+        section{
+            img, iframe{
+                width: 640px;
+                height: 450px;
+            }
+        }
+        address{
+            h4{
+                font-size: 28px;
+            }
+            div{
+                font-size: 28px;
+            }
+        }
+        article{
+            .suscribete{
+                font-size: 26px;
+                .unete{
+                    font-size: 28px;
+                }
+            }
+            .correoJoin{
+                input{
+                    height: 40px;
+                    width: 500px;
+                    &::placeholder{
+                        font-size: 24px;
+                        position: relative;
+                        bottom: 3px;
+                    }
+                }
+                button{
+                    height: 40px;
+                    width: 65px;
+                    font-size: 20px;
+                }
+            }
+            .finalText{
+                p:first-child{
+                    font-size: 36px;
+                }
+                p:last-child{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    footer{
+        h2{
+            font-size: 42px;
+            padding-left: 250px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            img, iframe{
+                width: 930px;
+                height: 650px;
+            }
+        }
+        address{
+            flex-wrap: wrap;
+            h4{
+                font-size: 35px;
+            }
+            div{
+                font-size: 35px;
+            }
+            .direccion{
+                padding-left: 14px;
+            }
+            .contacto{
+                padding-left: 20px;
+                position: relative;
+                right: 250px;
+            }
+        }
+        }
+        article{
+            .suscribete{
+                font-size: 30px;
+                .unete{
+                    font-size: 35px;
+                }
+            }
+            .correoJoin{
+                input{
+                    height: 50px;
+                    width: 600px;
+                    &::placeholder{
+                        font-size: 30px;
+                        position: relative;
+                        bottom: 3px;
+                    }
+                }
+                button{
+                    height: 50px;
+                    width: 90px;
+                    font-size: 28px;
+                }
+            }
+            .finalText{
+                font-size: 30px;
+                p:first-child{
+                    font-size: 45px;
+                }
+                p:last-child{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+
+@media (max-width:425px){
+    footer{
+        h2{
+            font-size: 60px;
+            padding-left: 250px;
+        }
+        section{
+            width: 100%;
+            align-items: center;
+            img, iframe{
+                width: 950px;
+                height: 600px;
+            }
+        }
+        address{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 250px;
+            h4{
+                font-size: 50px;
+            }
+            div{
+                font-size: 50px;
+            }
+            .direccion{
+                padding-right: 96px;
+            }
+            .horario{
+                padding-right: 50px;
+            }
+            .contacto{
+                padding-left: 426px;
+            }
+        }
+        article{
+            .suscribete{
+                font-size: 45px;
+                padding-left: 350px;
+                padding-right: 350px;
+                .unete{
+                    font-size: 48px;
+                }
+            }
+            .correoJoin{
+                input{
+                    height: 70px;
+                    width: 800px;
+                    &::placeholder{
+                        font-size: 40px;
+                        position: relative;
+                        bottom: 3px;
+                    }
+                }
+                button{
+                    height: 70px;
+                    width: 110px;
+                    font-size: 35px;
+                }
+            }
+            .finalText{
+                font-size: 50px;
+                p:first-child{
+                    font-size: 60px;
+                }
+                p:last-child{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

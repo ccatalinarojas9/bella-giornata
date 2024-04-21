@@ -6,19 +6,18 @@
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #faedee;
-  min-width: 1440px;
-  width: 100%;
+  align-items: center;
+  gap: none;
+  padding-top: 0px;
+  width: auto;
   height: 85px;
   background-color: #f6cacb;
   position: sticky;
   top: 0;
   left: 0;
-  color: #1f6c1b;
   flex-wrap: wrap;
-  align-items: center;
   z-index: 1112;
 }
 header h1 {
@@ -33,7 +32,7 @@ header h1 {
   position: relative;
   bottom: 20px;
 }
-header h1::first-letter {
+header h1:first-letter {
   font-size: 53px;
 }
 header h3 {
@@ -106,7 +105,6 @@ body {
 }
 
 .presentacion {
-  list-style-type: none;
   text-decoration: none;
   justify-content: center;
   padding-top: 50px;
@@ -192,8 +190,8 @@ body {
   font-size: 30px;
   position: relative;
   bottom: 130px;
-  padding-left: 350px;
-  padding-right: 350px;
+  padding-left: 250px;
+  padding-right: 250px;
   text-align: center;
   padding-top: 50px;
   width: 1440px;
@@ -203,7 +201,6 @@ footer {
   background-color: #a2b99a;
   min-height: 717px;
   min-width: 1440px;
-  width: 100%;
   justify-content: center;
   position: relative;
   bottom: 0;
@@ -218,8 +215,10 @@ footer h2 {
 }
 footer section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 1.875rem;
+  align-items: center;
+  gap: 30px;
 }
 footer section img, footer section iframe {
   width: 500px;
@@ -228,12 +227,14 @@ footer section img, footer section iframe {
 
 address {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 50px;
+  min-width: 1440px;
   padding-top: 25px;
 }
-address h4 {
+address h4, address div p {
   text-decoration: none;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -243,12 +244,6 @@ address h4 {
   padding-bottom: 15px;
 }
 address div p {
-  text-decoration: none;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 24px;
   padding: 4px;
 }
 
@@ -263,8 +258,7 @@ article .suscribete .unete {
   font-family: "Questrial", sans-serif;
   text-align: center;
   color: white;
-  padding: 0px 200px;
-  padding-bottom: 8px;
+  padding-top: 20px;
   font-size: 24px;
   font-weight: 200;
 }
@@ -288,7 +282,7 @@ article .correoJoin input::placeholder {
 }
 article .correoJoin button {
   border: 1px solid black;
-  background-color: #1f6d1b;
+  background-color: #1f6c1b;
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   color: white;
@@ -300,7 +294,7 @@ article .correoJoin button {
   cursor: pointer;
 }
 article .correoJoin button:hover {
-  background-color: #054302;
+  background-color: #013b01;
 }
 article .correoJoin button:focus {
   background-color: rgba(255, 255, 0, 0.592);
@@ -349,28 +343,36 @@ article .finalText p:last-child {
 }
 
 .contenidoCafe {
+  min-width: 1440px;
   background-image: url("../assets/img/mapaEjeC.png");
-  max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
-.contenidoCafe p {
+.contenidoCafe div p {
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   font-weight: 100;
   color: black;
   font-size: 24px;
   text-align: center;
-  padding: 0px 500px;
+  padding: 50px 200px;
   min-width: 1440px;
+}
+.contenidoCafe div .parCafe1 {
+  position: relative;
+  top: 70px;
+}
+.contenidoCafe div .parCafe3 {
+  position: relative;
+  bottom: 80px;
 }
 
 .main-menu {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.main-menu h4 {
+.main-menu h4, .main-menu address div p, address div .main-menu p {
   color: #1f6c1b;
   font-weight: 100;
 }
@@ -426,7 +428,6 @@ article .finalText p:last-child {
 .main-menu hr {
   height: 2px;
   width: 500px;
-  color: #a2b99a;
   background-color: #a2b99a;
   position: relative;
   left: 90px;
@@ -441,10 +442,10 @@ article .finalText p:last-child {
 .main-menu .hr2 hr {
   border-left: #a2b99a;
   width: 2px;
-  height: 950px;
   position: absolute;
   left: 728px;
   top: 900px;
+  height: 950px;
 }
 
 .advComida {
@@ -524,14 +525,31 @@ article .finalText p:last-child {
   grid-column-gap: 60px;
   grid-row-gap: 30px;
   min-width: 1440px;
-  /*width:100%;*/
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 50px;
   grid-template-areas: "titulo titulo" "name last-name" "phone email" "descrip descrip" "button button";
 }
-.main-reservas h4 {
+.main-reservas .div-name {
+  grid-area: name;
+}
+.main-reservas .div-lastname {
+  grid-area: last-name;
+}
+.main-reservas .div-phone {
+  grid-area: phone;
+}
+.main-reservas .div-email {
+  grid-area: email;
+}
+.main-reservas .div-description {
+  grid-area: descrip;
+}
+.main-reservas .resButton {
+  grid-area: button;
+}
+.main-reservas h4, .main-reservas address div p, address div .main-reservas p {
   display: grid;
   grid-area: titulo;
   align-content: center;
@@ -539,8 +557,8 @@ article .finalText p:last-child {
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   color: black;
-  font-size: 30px;
-  font-weight: 100;
+  font-size: 35px;
+  font-weight: 300;
   padding-bottom: 58px;
 }
 .main-reservas div {
@@ -550,6 +568,7 @@ article .finalText p:last-child {
   font-family: "Questrial", sans-serif;
   color: black;
   font-size: 26px;
+  font-weight: 100;
 }
 .main-reservas div input {
   border: none;
@@ -581,28 +600,516 @@ article .finalText p:last-child {
   padding-bottom: 80px;
 }
 
-.div-name {
-  grid-area: name;
+@media (max-width: 1345px) {
+  header {
+    width: 1440px;
+    height: auto;
+    justify-content: space-around;
+    padding: 5px;
+    height: min-content;
+  }
+  header .navBar {
+    padding-top: 50px;
+  }
 }
-
-.div-lastname {
-  grid-area: last-name;
+@media (max-width: 768px) {
+  header {
+    width: 1440px;
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 60px;
+    padding-left: 0;
+    margin-top: 0;
+    bottom: 0;
+    padding-top: 0px;
+    padding-right: 800px;
+    height: 90px;
+  }
+  header h1:first-letter {
+    font-size: 73px;
+  }
+  header h3 {
+    position: absolute;
+    padding-bottom: 68px;
+    padding-left: 8px;
+    font-size: 16px;
+  }
+  header .navBar {
+    gap: 60px;
+    position: relative;
+    bottom: 4px;
+  }
+  header .navBar li a {
+    font-size: 34px;
+  }
 }
-
-.div-phone {
-  grid-area: phone;
+@media (max-width: 768px) and (max-width: 425px) {
+  header h1 {
+    padding-top: 16px;
+    padding-right: 830px;
+    font-size: 70px;
+    height: 100px;
+  }
+  header h1:first-letter {
+    font-size: 74px;
+  }
+  header h3 {
+    position: absolute;
+    padding-bottom: 65px;
+    padding-left: 8px;
+    font-size: 18px;
+  }
+  header .navBar li a {
+    font-size: 40px;
+  }
 }
-
-.div-email {
-  grid-area: email;
+@media (max-width: 768px) and (max-width: 320px) {
+  header {
+    height: 360px;
+  }
+  header h1 {
+    font-size: 90px;
+    height: 110px;
+    padding-right: 650px;
+  }
+  header h1:first-letter {
+    font-size: 92px;
+  }
+  header h3 {
+    padding-bottom: 159px;
+    font-size: 20px;
+  }
+  header .navBar {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    row-gap: 0px;
+    margin-left: 80px;
+    position: relative;
+    bottom: 20px;
+  }
+  header .navBar li a {
+    font-size: 50px;
+  }
 }
-
-.div-description {
-  grid-area: descrip;
+@media (max-width: 768px) {
+  footer h2 {
+    font-size: 40px;
+    padding-left: 66px;
+  }
+  footer section img, footer section iframe {
+    width: 640px;
+    height: 450px;
+  }
+  footer address h4, footer address div p {
+    font-size: 28px;
+  }
+  footer address div {
+    font-size: 28px;
+  }
+  footer article .suscribete {
+    font-size: 26px;
+  }
+  footer article .suscribete .unete {
+    font-size: 28px;
+  }
+  footer article .correoJoin input {
+    height: 40px;
+    width: 500px;
+  }
+  footer article .correoJoin input::placeholder {
+    font-size: 24px;
+    position: relative;
+    bottom: 3px;
+  }
+  footer article .correoJoin button {
+    height: 40px;
+    width: 65px;
+    font-size: 20px;
+  }
+  footer article .finalText p:first-child {
+    font-size: 36px;
+  }
+  footer article .finalText p:last-child {
+    font-size: 20px;
+  }
 }
-
-.resButton {
-  grid-area: button;
+@media (max-width: 600px) {
+  footer h2 {
+    font-size: 42px;
+    padding-left: 250px;
+  }
+  footer section {
+    display: flex;
+    flex-direction: column;
+  }
+  footer section img, footer section iframe {
+    width: 930px;
+    height: 650px;
+  }
+  footer address {
+    flex-wrap: wrap;
+  }
+  footer address h4, footer address div p {
+    font-size: 35px;
+  }
+  footer address div {
+    font-size: 35px;
+  }
+  footer address .direccion {
+    padding-left: 14px;
+  }
+  footer address .contacto {
+    padding-left: 20px;
+    position: relative;
+    right: 250px;
+  }
+  article .suscribete {
+    font-size: 30px;
+  }
+  article .suscribete .unete {
+    font-size: 35px;
+  }
+  article .correoJoin input {
+    height: 50px;
+    width: 600px;
+  }
+  article .correoJoin input::placeholder {
+    font-size: 30px;
+    position: relative;
+    bottom: 3px;
+  }
+  article .correoJoin button {
+    height: 50px;
+    width: 90px;
+    font-size: 28px;
+  }
+  article .finalText {
+    font-size: 30px;
+  }
+  article .finalText p:first-child {
+    font-size: 45px;
+  }
+  article .finalText p:last-child {
+    font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  footer h2 {
+    font-size: 60px;
+    padding-left: 250px;
+  }
+  footer section {
+    width: 100%;
+    align-items: center;
+  }
+  footer section img, footer section iframe {
+    width: 950px;
+    height: 600px;
+  }
+  footer address {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 250px;
+  }
+  footer address h4, footer address div p {
+    font-size: 50px;
+  }
+  footer address div {
+    font-size: 50px;
+  }
+  footer address .direccion {
+    padding-right: 96px;
+  }
+  footer address .horario {
+    padding-right: 50px;
+  }
+  footer address .contacto {
+    padding-left: 426px;
+  }
+  footer article .suscribete {
+    font-size: 45px;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+  footer article .suscribete .unete {
+    font-size: 48px;
+  }
+  footer article .correoJoin input {
+    height: 70px;
+    width: 800px;
+  }
+  footer article .correoJoin input::placeholder {
+    font-size: 40px;
+    position: relative;
+    bottom: 3px;
+  }
+  footer article .correoJoin button {
+    height: 70px;
+    width: 110px;
+    font-size: 35px;
+  }
+  footer article .finalText {
+    font-size: 50px;
+  }
+  footer article .finalText p:first-child {
+    font-size: 60px;
+  }
+  footer article .finalText p:last-child {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1024px) {
+  .principal {
+    height: 110vh;
+  }
+}
+@media (max-width: 1208px) {
+  .principal {
+    height: 110vh;
+  }
+}
+@media (max-width: 768px) {
+  .principal {
+    height: 140vh;
+    font-size: 30px;
+    height: 320px;
+  }
+  .principal .bienvenida {
+    height: 220px;
+  }
+  .presentacion p {
+    font-size: 34px;
+  }
+  .presentacion2 {
+    font-size: 34px;
+  }
+  .finalMain {
+    font-size: 34px;
+  }
+}
+@media (max-width: 425px) {
+  .principal {
+    font-size: 40px;
+    height: 510px;
+    height: 160vh;
+  }
+  .principal .bienvenida {
+    height: 320px;
+  }
+  .presentacion p {
+    font-size: 40px;
+  }
+  .presentacion2 {
+    font-size: 40px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .finalMain {
+    font-size: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .contenidoCafe div p {
+    font-size: 29px;
+  }
+}
+@media (max-width: 768px) {
+  .cafeEncabezado h2 {
+    font-size: 38px;
+    top: 98px;
+  }
+  .contenidoCafe div p {
+    font-size: 34px;
+  }
+}
+@media (max-width: 600px) {
+  .cafeEncabezado h2 {
+    font-size: 42px;
+    top: 98px;
+  }
+  .contenidoCafe div p {
+    font-size: 38px;
+  }
+}
+@media (max-width: 425px) {
+  .cafeEncabezado h2 {
+    font-size: 46px;
+    top: 98px;
+  }
+  .contenidoCafe div p {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .recTitulo {
+    font-size: 38px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .recomendaiones-contenido {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 420px 420px 420px;
+    min-width: 1440px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-content: center;
+    grid-column-gap: 95px;
+    grid-row-gap: 90px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+  .recomendaiones-contenido div img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+  .recomendaiones-contenido div h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .recTitulo {
+    font-size: 44px;
+  }
+  .recomendaiones-contenido {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 490px 490px 490px;
+    min-width: 1440px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-content: center;
+    grid-column-gap: 95px;
+    grid-row-gap: 90px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+  .recomendaiones-contenido div img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .recomendaiones-contenido div h5 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 425px) {
+  .recTitulo {
+    font-size: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .recomendaiones-contenido {
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 700px;
+    min-width: 1440px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-content: center;
+    grid-row-gap: 110px;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+  }
+  .recomendaiones-contenido div img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  .recomendaiones-contenido div h5 {
+    font-size: 50px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-reservas {
+    grid-template-columns: 600px 600px;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-row-gap: 50px;
+  }
+  .main-reservas h4, .main-reservas address div p, address div .main-reservas p {
+    font-size: 40px;
+  }
+  .main-reservas button {
+    width: 1250px;
+    font-size: 30px;
+    height: 75px;
+  }
+  .main-reservas div label {
+    font-size: 32px;
+  }
+  .main-reservas div input {
+    height: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .main-reservas {
+    grid-template-columns: 900px;
+    grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
+    grid-column-gap: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-template-areas: "titulo" "name" "last-name" "phone" "email" "descrip" "button";
+  }
+  .main-reservas h4, .main-reservas address div p, address div .main-reservas p {
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .main-reservas div {
+    padding-top: 80px;
+  }
+  .main-reservas div label {
+    font-size: 40px;
+  }
+  .main-reservas div input {
+    height: 60px;
+  }
+  .main-reservas button {
+    width: 900px;
+  }
+}
+@media (max-width: 425px) {
+  .main-reservas {
+    grid-template-columns: 1100px;
+    grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
+    grid-column-gap: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .main-reservas h4, .main-reservas address div p, address div .main-reservas p {
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .main-reservas button {
+    width: 1100px;
+    font-size: 40px;
+  }
+  .main-reservas div label {
+    font-size: 42px;
+    padding-top: 80px;
+  }
+  .main-reservas div input {
+    height: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,319 @@
+@media (max-width:1024px){
+    .principal{
+        height: 110vh;
+    }
+}
+@media (max-width:1208px){
+    .principal{
+        height: 110vh;
+    }
+}
+@media (max-width:768px) {
+    .principal{
+        height: 140vh;
+        font-size: 30px;
+        height: 320px;
+        .bienvenida{
+            height: 220px;
+        }
+        
+    }
+    .presentacion p{
+        font-size: 34px;
+    }
+    .presentacion2{
+        font-size: 34px;
+    }
+    .finalMain{
+        font-size: 34px;
+    }
+}
+@media (max-width:425px){
+    .principal{
+        font-size: 40px;
+        height: 510px;
+        height: 160vh;
+        .bienvenida{
+        height: 320px;
+        }
+    }
+    .presentacion p{
+        font-size: 40px;
+    }
+    .presentacion2{
+        font-size: 40px;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .finalMain{
+        font-size: 40px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+
+@media (max-width:1024px){
+    .contenidoCafe{
+        div{
+            p{
+                font-size: 29px;
+            }
+        }
+    }
+
+}
+@media(max-width:768px){
+    .cafeEncabezado{
+        h2{
+        font-size: 38px;
+        top: 98px;
+        }
+    }
+    .contenidoCafe{
+        div{
+            p{
+                font-size: 34px;
+            }
+        }
+    }
+}
+@media (max-width:600px){
+    .cafeEncabezado{
+        h2{
+            font-size: 42px;
+            top: 98px;
+        }
+    }
+        .contenidoCafe{
+            div{
+                p{
+                    font-size: 38px;
+                }
+            }
+        }
+}
+@media (max-width:425px){
+    .cafeEncabezado{
+        h2{
+            font-size: 46px;
+            top: 98px;
+    }
+}
+    .contenidoCafe{
+        div{
+            p{
+                padding-left: 140px;
+                padding-right: 140px;
+                font-size: 42px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width:768px){
+    .recTitulo{
+        font-size: 38px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .recomendaiones-contenido{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 420px 420px 420px;
+        min-width: 1440px;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        align-content: center;
+        grid-column-gap: 95px;
+        grid-row-gap: 90px;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        ;
+        div{
+            img{
+                width: 100%;
+                height: 330px;
+                object-fit: cover;
+            }
+            h5{
+                font-size:30px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:550px){
+    .recTitulo{
+        font-size: 44px;
+    }
+    .recomendaiones-contenido{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 490px 490px 490px;
+        min-width: 1440px;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        align-content: center;
+        grid-column-gap: 95px;
+        grid-row-gap: 90px;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        ;
+        div{
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+            h5{
+                font-size:38px;
+            }
+        }
+        
+    }
+}
+@media (max-width:425px){
+    .recTitulo{
+            font-size: 50px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+    .recomendaiones-contenido{
+        display: grid;
+        grid-template-columns: 900px;
+        grid-template-rows: 700px;
+        min-width: 1440px;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        align-content: center;
+        grid-row-gap: 110px;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        ;
+        div{
+            img{
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+            }
+            h5{
+                font-size:50px;
+                padding-top: 40px;
+            }
+        }
+        
+    }
+}
+
+
+@media (max-width:768px){
+    .main-reservas{
+        grid-template-columns: 600px 600px;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        grid-row-gap: 50px;
+        h4{
+            font-size: 40px;
+        }
+        button{
+            width: 1250px;
+            font-size: 30px;
+            height: 75px;
+        }
+        div{
+            label{
+                font-size: 32px;
+            }
+            input{
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    .main-reservas{
+        grid-template-columns: 900px;
+        grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
+        grid-column-gap: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        grid-template-areas: 
+        "titulo"
+        "name"
+        "last-name"
+        "phone"
+        "email"
+        "descrip"
+        "button"
+        ;
+        h4{
+            font-size: 50px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        div{
+            padding-top: 80px;
+            label{
+                font-size: 40px;
+            }
+            input{
+                height: 60px;
+            }
+        }
+        button{
+            width: 900px;
+        }
+    }
+}
+
+@media (max-width:425px){
+    .main-reservas{
+        grid-template-columns: 1100px;
+        grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
+        grid-column-gap: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0;
+        ;
+        h4{
+            font-size: 60px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        button{
+            width: 1100px;
+            font-size: 40px;
+        }
+        div{
+            label{
+                font-size: 42px;
+                padding-top: 80px;
+            }
+            input{
+                height: 70px;
+            }
+            }
+        }
+    }

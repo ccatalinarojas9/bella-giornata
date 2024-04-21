@@ -1,39 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./utilities/_mapas.scss";
+@import "./utilities/mixins";
+@import "./base/reset";
 
 header{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #faedee;
-    min-width:1440px;
-    width: 100%;
+    @include flex (row, space-between, center, none);
+    padding-top: 0px;
+    width: auto;
     height: 85px;
-    background-color: #f6cacb;
+    background-color: map-get($colores,backgroundNav);
     position:sticky;
     top:0;
     left: 0;
-    color: #1f6c1b;
     flex-wrap: wrap;
-    align-items: center;
     z-index: 1112; 
     h1{
         text-decoration: none;
         font-family: "Oooh Baby", cursive;
         font-weight: 400;
         font-style: normal;
-        color: #1f6c1b;
+        color: map-get($colores, letraPrincipalNav );
         font-size: 50px;
         padding-left: 50px;
         margin-top: 15px;
         position: relative;
         bottom: 20px;
-    }
-    h1::first-letter{
+        &:first-letter{
         font-size: 53px;
+        }
     }
     h3{
         text-decoration: none;
@@ -50,23 +43,22 @@ header{
         gap: 30px;
         list-style-type: none;
         padding-right: 50px;
+        }
+        .navBar li a{
+            display: flex;
+            text-decoration: none;
+            color: map-get($colores, letraPrincipalNav );
+            font-family: "Questrial", sans-serif;
+            font-size: 28px; 
+            margin-top: 30px;
+            position: relative;
+            bottom: 20px;
+            }
     }
-    .navBar li a{
-    display: flex;
-    text-decoration: none;
-    color: #1f6c1b;
-    font-family: "Questrial", sans-serif;
-    font-size: 28px; 
-    margin-top: 30px;
-    position: relative;
-    bottom: 20px;
-    }
-    }
-
+    
     body{
-        background-color: #faedee;
+        background-color: map-get($colores, backgroundBody );
     }
-
     .principal{
         background-image: url("../assets/img/foto-pagina-principal.png");
         background-size: cover;
@@ -107,14 +99,13 @@ header{
         
         }
         .presentacion{
-        list-style-type: none;
         text-decoration: none;
         justify-content: center;
         padding-top: 50px;
         padding-right: 200px;
         padding-left: 200px;
         padding-bottom: 50px;
-        color: #a2b99a;
+        color: map-get($colores, contenidoinicioYfooter );
         text-align: center;
         font-family: "Questrial", sans-serif;
         font-size: 30px;
@@ -137,7 +128,7 @@ header{
             text-decoration: none;
             justify-content: center;
             padding: 50px 200px 50px 200px;
-            color: #a2b99a;
+            color: map-get($colores, contenidoinicioYfooter );
             text-align: center;
             font-family: "Questrial", sans-serif;
             font-size: 30px;
@@ -186,22 +177,21 @@ header{
             display: flex;
             justify-content: center;
             font-family: "Questrial", sans-serif;
-            color: #a2b99a;
+            color: map-get($colores, contenidoinicioYfooter );
             font-size: 30px;
             position: relative;
             bottom: 130px;
-            padding-left: 350px;
-            padding-right: 350px;
+            padding-left: 250px;
+            padding-right: 250px;
             text-align: center;
             padding-top: 50px;
             width: 1440px;
         
         }
         footer{
-            background-color: #a2b99a;
+            background-color:map-get($colores, contenidoinicioYfooter  );
             min-height: 717px;
             min-width: 1440px;
-            width: 100%;
             justify-content: center;
             position: relative;
             bottom: 0;
@@ -214,9 +204,7 @@ header{
                 font-size:32px;
             }
             section{
-                display: flex;
-                justify-content: center;
-                gap: 1.875rem;
+                @include flex (row, center, center, 30px);
                 img, iframe{
                     width: 500px;
                     height: 400px;
@@ -224,10 +212,8 @@ header{
             }
         }
         address{
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            gap: 50px;
+            @include flex (row, center, center, 50px);
+            min-width: 1440px;
             padding-top:25px;
             h4{
                 text-decoration: none;
@@ -240,12 +226,7 @@ header{
             }
             div{
                 p{
-                    text-decoration: none;
-                    color: white;
-                    font-family: "Poppins", sans-serif;
-                    font-weight: 100;
-                    font-style: normal;
-                    font-size: 24px;
+                    @extend h4;
                     padding: 4px;
                 }
             }
@@ -261,8 +242,7 @@ header{
                     font-family: "Questrial", sans-serif;
                     text-align: center;
                     color: white;
-                    padding: 0px 200px;
-                    padding-bottom: 8px;
+                    padding-top: 20px;
                     font-size: 24px;
                     font-weight: 200;
                 }
@@ -286,7 +266,7 @@ header{
                 }
                 button{
                     border: 1px solid black;
-                    background-color: #1f6d1b;
+                    background-color: map-get($colores, letraPrincipalNav );
                     text-decoration: none;
                     font-family: "Questrial", sans-serif;
                     color: white;
@@ -297,7 +277,7 @@ header{
                     height: 30px;
                     cursor: pointer;
                     &:hover{
-                        background-color: #054302;
+                        background-color: #013b01;
                     }
                     &:focus{
                         background-color: rgba(255, 255, 0, 0.592);
@@ -311,14 +291,14 @@ header{
                 text-align: center;
                 text-decoration: none;
                 font-family: "Questrial", sans-serif;
-                color: #1f6c1b;
+                color: map-get($colores, letraPrincipalNav );
                 font-weight: 100;
                 font-size: 25px;
                 padding-top: 10px;
                 p:first-child{
                     font-family: "Oooh Baby", cursive;
-                font-size: 32px;
-                font-weight: 100;
+                    font-size: 32px;
+                    font-weight: 100;
                 }
                 p:last-child{
                     font-size: 14px;
@@ -347,28 +327,37 @@ header{
             }
         }
         .contenidoCafe{
+            min-width: 1440px;
             background-image: url("../assets/img/mapaEjeC.png");
-            max-width: 100%;
             height: auto;
             background-repeat: no-repeat;
             background-position:center;
-            p{
-                text-decoration: none;
-                font-family: "Questrial", sans-serif;
-                font-weight: 100;
-                color: black;
-                font-size: 24px;
-                text-align: center;
-                padding: 0px 500px;
-                min-width: 1440px;
-                
+            div{
+                p{
+                    text-decoration: none;
+                    font-family: "Questrial", sans-serif;
+                    font-weight: 100;
+                    color: black;
+                    font-size: 24px;
+                    text-align: center;
+                    padding: 50px 200px;
+                    min-width: 1440px;
+                    }
+                    .parCafe1{
+                        position: relative;
+                        top: 70px;
+                    }
+                    .parCafe3{
+                        position: relative;
+                        bottom: 80px;
+                    }
+                }
             }
-        }
         .main-menu{
             display: grid;
             grid-template-columns: 50% 50%;
             h4{
-                color: #1f6c1b;
+                color: map-get($colores, letraPrincipalNav );
                 font-weight: 100;
             }
             .columna1menu, .columna2menu, .columna3menu, .columna4menu{
@@ -386,7 +375,7 @@ header{
             h2{
                 
                 font-size: 22px;
-                color: #876287;
+                color: map-get($colores, titulos );
                 font-weight: 100;
                 
             }
@@ -428,25 +417,24 @@ header{
             hr{
                 height: 2px;
                 width: 500px;
-                color: #a2b99a;
-                background-color: #a2b99a;
+                background-color: map-get($colores, contenidoinicioYfooter );
                 position: relative;
                 left: 90px;
             }
             .hr1 hr{
-                border-left: #a2b99a;
+                border-left: map-get($colores, contenidoinicioYfooter );
                 width: 2px;
                 height: 600px;
                 position: absolute;
                 left: 728px;
             }
             .hr2 hr{
-                border-left: #a2b99a;
+                border-left: map-get($colores, contenidoinicioYfooter );
                 width: 2px;
-                height: 950px;
                 position: absolute;
                 left: 728px;
                 top: 900px;
+                height: 950px;
             }
         }
         .advComida{
@@ -459,7 +447,7 @@ header{
             font-weight: 100;
             font-size: 32px;
             text-align: center;
-            color: #876287;
+            color: map-get($colores, titulos );
             padding-top: 70px;
             padding-bottom: 40px;
             min-width: 1440px;
@@ -521,10 +509,9 @@ header{
             grid-column-gap: 60px;
             grid-row-gap: 30px;
             min-width: 1440px;
-            /*width:100%;*/
             justify-content: center;
             align-content: center;
-            padding-top: 50px;
+            padding-top: 70px;
             padding-bottom: 50px;
             grid-template-areas: 
             "titulo titulo"
@@ -533,6 +520,24 @@ header{
             "descrip descrip" 
             "button button" 
             ;
+            .div-name{
+                grid-area: name;
+            }
+            .div-lastname{
+                grid-area: last-name;
+            }
+            .div-phone{
+                grid-area: phone;
+            }
+            .div-email{
+                grid-area: email;
+            }
+            .div-description{
+                grid-area: descrip;
+            }
+            .resButton{
+                grid-area: button;
+            }
             h4{
                 display: grid;
                 grid-area: titulo;
@@ -541,8 +546,8 @@ header{
                 text-decoration: none;
                 font-family: "Questrial", sans-serif;
                 color: black;
-                font-size: 30px;
-                font-weight: 100;
+                font-size: 35px;
+                font-weight: 300;
                 padding-bottom: 58px;
                 }
                 div{
@@ -552,6 +557,7 @@ header{
                     font-family: "Questrial", sans-serif;
                     color: black;
                     font-size: 26px;
+                    font-weight: 100;
                     input{
                         border: none;
                         padding-top: 10px;
@@ -584,23 +590,6 @@ header{
             }
         }
         
-        
-        .div-name{
-            grid-area: name;
-        }
-        .div-lastname{
-            grid-area: last-name;
-        }
-        .div-phone{
-            grid-area: phone;
-        }
-        .div-email{
-            grid-area: email;
-        }
-        .div-description{
-            grid-area: descrip;
-        }
-        .resButton{
-            grid-area: button;
-        }
-        
+        @import "./layout/MediaQuerry/mediaQheader";
+        @import "./layout/MediaQuerry/mediaQfooter";
+        @import "./layout/MediaQuerry/mediaQmain";
