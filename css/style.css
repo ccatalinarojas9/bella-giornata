@@ -1054,6 +1054,9 @@ article .finalText p:last-child {
     font-size: 46px;
     top: 98px;
   }
+  .contenidoCafe div {
+    font-size: 42px;
+  }
   .contenidoCafe div p {
     padding-left: 140px;
     padding-right: 140px;
