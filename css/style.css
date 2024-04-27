@@ -11,7 +11,7 @@ header {
   align-items: center;
   gap: none;
   padding-top: 0px;
-  width: auto;
+  min-width: 1440px;
   height: 85px;
   background-color: #f6cacb;
   position: sticky;
@@ -23,7 +23,7 @@ header {
 header h1 {
   text-decoration: none;
   font-family: "Oooh Baby", cursive;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   color: #1f6c1b;
   font-size: 50px;
@@ -39,7 +39,7 @@ header h3 {
   text-decoration: none;
   color: black;
   font-family: "Questrial", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 12px;
   padding-left: 50px;
   position: relative;
@@ -340,7 +340,7 @@ article .finalText {
 article .finalText p:first-child {
   font-family: "Oooh Baby", cursive;
   font-size: 32px;
-  font-weight: 100;
+  font-weight: 800;
 }
 article .finalText p:last-child {
   font-size: 14px;
@@ -396,72 +396,59 @@ article .finalText p:last-child {
 
 .main-menu {
   display: grid;
-  grid-template-columns: 50% 50%;
-}
-.main-menu h4, .main-menu address div p, address div .main-menu p {
-  color: #1f6c1b;
-  font-weight: 100;
-}
-.main-menu .columna1menu, .main-menu .columna2menu, .main-menu .columna3menu, .main-menu .columna4menu {
-  width: 100%;
+  min-width: 1440px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
   text-align: center;
-  padding-top: 100px;
-  text-decoration: none;
+  margin-top: 40px;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 16px;
-  padding-bottom: 200px;
-  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  grid-template-areas: "bebca1 bebfri2" "menu1 menu2";
+}
+.main-menu .bebca1 {
+  grid-area: bebca1;
+  padding: 80px;
+}
+.main-menu .bebfri2 {
+  grid-area: bebfri2;
+  padding: 80px;
+}
+.main-menu .menu1 {
+  grid-area: menu1;
+  padding: 80px;
+  position: relative;
+  bottom: 500px;
+}
+.main-menu .menu2 {
+  grid-area: menu2;
+  padding: 80px;
+  position: relative;
+  bottom: 250px;
 }
 .main-menu h2 {
   font-size: 22px;
   color: #876287;
-  font-weight: 100;
+  font-weight: 500;
 }
-.main-menu .optBebidasCalientes, .main-menu .optBebidasFrias {
-  width: 450px;
-  padding-left: 100px;
-  padding-bottom: 50px;
-  position: relative;
-  left: 70px;
-  font-size: 13px;
+.main-menu h4, .main-menu address div p, address div .main-menu p {
+  color: #1f6c1b;
+  font-weight: 400;
 }
-.main-menu .brunchMenu {
-  position: relative;
-  left: 20px;
+.main-menu .optBebidasCalientes {
   font-size: 16px;
-  bottom: 40px;
-}
-.main-menu .columna1menu img {
-  width: 50px;
-  height: 50px;
-}
-.main-menu .columna2menu img {
-  width: 42px;
-  height: 42px;
-}
-.main-menu .imgBrunchD img {
-  width: 35px;
-  height: 35px;
-  position: relative;
-  top: 70px;
-  right: 20px;
-}
-.main-menu .lineaMenu1 {
-  height: 5px;
 }
 .main-menu hr {
   height: 2px;
   width: 500px;
   background-color: #a2b99a;
-  position: relative;
-  left: 90px;
 }
 .main-menu .hr1 hr {
   border-left: #a2b99a;
   width: 2px;
-  height: 600px;
+  height: 640px;
   position: absolute;
   left: 728px;
 }
@@ -469,13 +456,28 @@ article .finalText p:last-child {
   border-left: #a2b99a;
   width: 2px;
   position: absolute;
-  left: 728px;
-  top: 900px;
-  height: 950px;
+  left: 610px;
+  top: 100px;
+  height: 1100px;
+}
+.main-menu .bebca1 img {
+  width: 80px;
+  height: 80px;
+}
+.main-menu .bebfri2 img {
+  width: 70px;
+  height: 60px;
+  position: relative;
+  top: 10px;
 }
 
 .advComida {
   color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 500px;
 }
 
 .recTitulo {
@@ -646,22 +648,23 @@ article .finalText p:last-child {
     flex-direction: column;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 80px;
     padding-left: 0;
     margin-top: 0;
     bottom: 0;
     padding-top: 0px;
     padding-right: 800px;
-    height: 90px;
+    font-weight: 400;
   }
   header h1:first-letter {
-    font-size: 73px;
+    font-size: 90px;
   }
   header h3 {
     position: absolute;
-    padding-bottom: 68px;
+    padding-bottom: 100px;
     padding-left: 8px;
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 500;
   }
   header .navBar {
     gap: 60px;
@@ -669,27 +672,42 @@ article .finalText p:last-child {
     bottom: 4px;
   }
   header .navBar li a {
-    font-size: 34px;
+    font-size: 40px;
   }
 }
 @media (max-width: 768px) and (max-width: 425px) {
+  header {
+    height: 440px;
+  }
   header h1 {
-    padding-top: 16px;
-    padding-right: 830px;
-    font-size: 70px;
+    padding-right: 600px;
+    font-size: 120px;
     height: 100px;
+    font-weight: 600;
+    padding-bottom: 150px;
   }
   header h1:first-letter {
-    font-size: 74px;
+    font-size: 130px;
   }
   header h3 {
     position: absolute;
-    padding-bottom: 65px;
+    padding-bottom: 178px;
     padding-left: 8px;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  header .navBar {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    row-gap: 0px;
+    margin-left: 80px;
+    position: relative;
+    bottom: 20px;
   }
   header .navBar li a {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media (max-width: 768px) and (max-width: 320px) {
@@ -707,16 +725,6 @@ article .finalText p:last-child {
   header h3 {
     padding-bottom: 159px;
     font-size: 20px;
-  }
-  header .navBar {
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 200px;
-    row-gap: 0px;
-    margin-left: 80px;
-    position: relative;
-    bottom: 20px;
   }
   header .navBar li a {
     font-size: 50px;
@@ -766,25 +774,25 @@ article .finalText p:last-child {
 }
 @media (max-width: 600px) {
   footer h2 {
-    font-size: 42px;
-    padding-left: 250px;
+    font-size: 54px;
+    padding-left: 120px;
   }
   footer section {
     display: flex;
     flex-direction: column;
   }
   footer section img, footer section iframe {
-    width: 930px;
-    height: 650px;
+    width: 1200px;
+    height: 750px;
   }
   footer address {
     flex-wrap: wrap;
   }
   footer address h4, footer address div p {
-    font-size: 35px;
+    font-size: 42px;
   }
   footer address div {
-    font-size: 35px;
+    font-size: 42px;
   }
   footer address .direccion {
     padding-left: 14px;
@@ -792,63 +800,63 @@ article .finalText p:last-child {
   footer address .contacto {
     padding-left: 20px;
     position: relative;
-    right: 250px;
+    right: 292px;
   }
-  article .suscribete {
-    font-size: 30px;
+  footer article .suscribete {
+    font-size: 32px;
   }
-  article .suscribete .unete {
-    font-size: 35px;
+  footer article .suscribete .unete {
+    font-size: 40px;
   }
-  article .correoJoin input {
-    height: 50px;
-    width: 600px;
+  footer article .correoJoin input {
+    height: 70px;
+    width: 700px;
   }
-  article .correoJoin input::placeholder {
-    font-size: 30px;
+  footer article .correoJoin input::placeholder {
+    font-size: 32px;
     position: relative;
     bottom: 3px;
   }
-  article .correoJoin button {
-    height: 50px;
+  footer article .correoJoin button {
+    height: 70px;
     width: 90px;
     font-size: 28px;
   }
-  article .finalText {
+  footer article .finalText {
     font-size: 30px;
   }
-  article .finalText p:first-child {
+  footer article .finalText p:first-child {
     font-size: 45px;
   }
-  article .finalText p:last-child {
+  footer article .finalText p:last-child {
     font-size: 26px;
   }
 }
 @media (max-width: 425px) {
   footer h2 {
-    font-size: 60px;
-    padding-left: 250px;
+    font-size: 65px;
+    padding-left: 70px;
   }
   footer section {
     width: 100%;
     align-items: center;
   }
   footer section img, footer section iframe {
-    width: 950px;
-    height: 600px;
+    width: 1300px;
+    height: 800px;
   }
   footer address {
     flex-wrap: nowrap;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-right: 250px;
+    padding-right: 500px;
   }
   footer address h4, footer address div p {
-    font-size: 50px;
+    font-size: 55px;
   }
   footer address div {
-    font-size: 50px;
+    font-size: 55px;
   }
   footer address .direccion {
     padding-right: 96px;
@@ -857,29 +865,29 @@ article .finalText p:last-child {
     padding-right: 50px;
   }
   footer address .contacto {
-    padding-left: 426px;
+    padding-left: 510px;
   }
   footer article .suscribete {
-    font-size: 45px;
+    font-size: 48px;
     padding-left: 350px;
     padding-right: 350px;
   }
   footer article .suscribete .unete {
-    font-size: 48px;
+    font-size: 52px;
   }
   footer article .correoJoin input {
-    height: 70px;
-    width: 800px;
+    height: 120px;
+    width: 900px;
   }
   footer article .correoJoin input::placeholder {
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
     bottom: 3px;
   }
   footer article .correoJoin button {
-    height: 70px;
-    width: 110px;
-    font-size: 35px;
+    height: 120px;
+    width: 150px;
+    font-size: 40px;
   }
   footer article .finalText {
     font-size: 50px;
@@ -888,12 +896,17 @@ article .finalText p:last-child {
     font-size: 60px;
   }
   footer article .finalText p:last-child {
-    font-size: 35px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .principal {
+    height: 120vh;
   }
 }
 @media (max-width: 1208px) {
   .principal {
-    height: 105vh;
+    height: 130vh;
   }
   .principal .teInvitamos {
     position: relative;
@@ -914,10 +927,13 @@ article .finalText p:last-child {
 }
 @media (max-width: 1024px) {
   .principal {
-    height: 120vh;
+    height: 140vh;
   }
 }
 @media (max-width: 768px) {
+  .principal {
+    height: 150vh;
+  }
   .principal div {
     height: 350px;
     font-size: 32px;
@@ -993,37 +1009,48 @@ article .finalText p:last-child {
 }
 @media (max-width: 425px) {
   .principal {
-    height: 150vh;
+    height: 230vh;
   }
   .principal div {
-    font-size: 48px;
-    height: 510px;
-    width: 800px;
+    font-size: 65px;
+    height: 550px;
+    width: 1100px;
   }
   .principal .bienvenida {
-    height: 320px;
-    width: 800px;
-    left: 340px;
+    height: 400px;
+    width: 1100px;
+    left: 190px;
   }
   .principal .teInvitamos {
     top: 700px;
-    left: 340px;
+    left: 190px;
   }
   .presentacion p {
-    font-size: 50px;
+    font-size: 65px;
   }
   .presentacion2 {
-    font-size: 50px;
+    font-size: 65px;
     padding-left: 180px;
     padding-right: 180px;
   }
   .finalMain {
-    font-size: 50px;
+    font-size: 65px;
     padding-left: 200px;
     padding-right: 200px;
   }
   .expMenu p {
     font-size: 50px;
+  }
+  .imagen-contenedor1 {
+    display: grid;
+    grid-template-columns: 1300px;
+    grid-template-rows: 800px 800px 800px 800px 800px 800px 800px 800px;
+    grid-template-areas: "img1" "img5" "img2" "img6" "img3" "img7" "img4" "img8";
+  }
+  .imagen-contenedor1 img {
+    height: 800px;
+    width: 1300px;
+    object-fit: cover;
   }
 }
 @media (max-width: 1024px) {
@@ -1045,7 +1072,7 @@ article .finalText p:last-child {
     font-size: 42px;
     top: 98px;
   }
-  .contenidoCafe div p {
+  .parrafoCafe p {
     font-size: 38px;
   }
 }

@@ -18,22 +18,23 @@
         flex-wrap: nowrap;
         flex-direction: column;
         h1{
-            font-size: 60px;
+            font-size: 80px;
             padding-left: 0;
             margin-top: 0;
             bottom: 0;
             padding-top: 0px;
             padding-right: 800px;
-            height: 90px;
+            font-weight: 400;
             &:first-letter{
-                font-size: 73px;
+                font-size: 90px;
             }
         }
         h3{
             position: absolute;
-            padding-bottom: 68px;
+            padding-bottom: 100px;
             padding-left: 8px;
-            font-size: 16px;
+            font-size: 24px;
+            font-weight: 500;
         }
         .navBar{
             gap: 60px;
@@ -41,7 +42,7 @@
             bottom:4px;
             li{
                 a{
-                    font-size: 34px;
+                    font-size: 40px;
                 }
             }
         }
@@ -50,23 +51,37 @@
 
 @media (max-width:425px){
     header{
+        height: 440px;
         h1{
-            padding-top: 16px;
-            padding-right: 830px;
-            font-size: 70px;
+            padding-right: 600px;
+            font-size: 120px;
             height: 100px;
+            font-weight: 600;
+            padding-bottom: 150px;
             &:first-letter{
-                font-size: 74px;
+                font-size: 130px;
             }
         }
         h3{
             position: absolute;
-            padding-bottom: 65px;
+            padding-bottom: 178px;
             padding-left: 8px;
-            font-size: 18px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .navBar{
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 200px;
+            row-gap: 0px;
+            margin-left: 80px;
+            position: relative;
+            bottom: 20px;
+            
         }
         .navBar li a{
-            font-size: 40px;
+            font-size: 60px;
         }
     }
 }
@@ -84,17 +99,6 @@
         h3{
             padding-bottom: 159px;
             font-size: 20px;
-        }
-        .navBar{
-            width: 80%;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 200px;
-            row-gap: 0px;
-            margin-left: 80px;
-            position: relative;
-            bottom: 20px;
-            
         }
         .navBar li a{
         font-size: 50px;
