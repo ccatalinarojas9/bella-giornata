@@ -184,7 +184,7 @@ body {
 .expMenu .invitacionMenu {
   background-image: url("../assets/img/exp2.png");
   background-repeat: no-repeat;
-  background-size: 303px;
+  background-size: cover;
 }
 .expMenu p {
   list-style-type: none;
@@ -401,11 +401,10 @@ article .finalText p:last-child {
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  margin-bottom: 30px;
   grid-template-areas: "bebca1 bebfri2" "menu1 menu2";
 }
 .main-menu .bebca1 {
@@ -420,13 +419,16 @@ article .finalText p:last-child {
   grid-area: menu1;
   padding: 80px;
   position: relative;
-  bottom: 500px;
+  bottom: 570px;
 }
 .main-menu .menu2 {
   grid-area: menu2;
   padding: 80px;
   position: relative;
-  bottom: 250px;
+  bottom: 200px;
+}
+.main-menu p {
+  padding-bottom: 8px;
 }
 .main-menu h2 {
   font-size: 22px;
@@ -436,6 +438,7 @@ article .finalText p:last-child {
 .main-menu h4, .main-menu address div p, address div .main-menu p {
   color: #1f6c1b;
   font-weight: 400;
+  padding-bottom: 8px;
 }
 .main-menu .optBebidasCalientes {
   font-size: 16px;
@@ -448,7 +451,7 @@ article .finalText p:last-child {
 .main-menu .hr1 hr {
   border-left: #a2b99a;
   width: 2px;
-  height: 640px;
+  height: 850px;
   position: absolute;
   left: 728px;
 }
@@ -458,7 +461,7 @@ article .finalText p:last-child {
   position: absolute;
   left: 610px;
   top: 100px;
-  height: 1100px;
+  height: 1380px;
 }
 .main-menu .bebca1 img {
   width: 80px;
@@ -476,6 +479,7 @@ article .finalText p:last-child {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-align: center;
+  min-width: 1440px;
   position: relative;
   bottom: 500px;
 }
@@ -484,7 +488,7 @@ article .finalText p:last-child {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 32px;
   text-align: center;
   color: #876287;
@@ -1038,9 +1042,6 @@ article .finalText p:last-child {
     padding-left: 200px;
     padding-right: 200px;
   }
-  .expMenu p {
-    font-size: 50px;
-  }
   .imagen-contenedor1 {
     display: grid;
     grid-template-columns: 1300px;
@@ -1052,10 +1053,59 @@ article .finalText p:last-child {
     width: 1300px;
     object-fit: cover;
   }
+  .expMenu {
+    display: grid;
+    grid-template-columns: 440px 300px 500px;
+    grid-template-rows: 500px;
+    position: relative;
+    right: 20px;
+    object-fit: cover;
+  }
+  .expMenu img {
+    height: 500px;
+    width: 500px;
+    padding: 0;
+  }
+  .expMenu .invitacionMenu {
+    background-size: 340px;
+    object-fit: cover;
+  }
+  .expMenu p {
+    font-size: 60px;
+  }
+  .expMenu .menuinv a {
+    font-size: 70px;
+    font-weight: 200;
+  }
 }
 @media (max-width: 1024px) {
   .contenidoCafe div p {
     font-size: 29px;
+  }
+  .main-menu article {
+    font-size: 22px;
+  }
+  .main-menu article h2 {
+    font-size: 28px;
+  }
+  .main-menu article .optBebidasCalientes {
+    font-size: 22px;
+  }
+  .main-menu .menu1 {
+    bottom: 730px;
+  }
+  .main-menu .menu2 {
+    bottom: 300px;
+  }
+  .main-menu .hr1 hr {
+    height: 950px;
+  }
+  .main-menu .hr2 hr {
+    height: 1750px;
+  }
+  .advComida {
+    font-size: 24px;
+    bottom: 650px;
   }
 }
 @media (max-width: 768px) {
@@ -1066,109 +1116,256 @@ article .finalText p:last-child {
   .contenidoCafe div p {
     font-size: 34px;
   }
+  .main-menu {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .main-menu article {
+    font-size: 30px;
+  }
+  .main-menu article h2 {
+    font-size: 36px;
+  }
+  .main-menu article .optBebidasCalientes {
+    font-size: 30px;
+  }
+  .main-menu .menu1 {
+    bottom: 620px;
+  }
+  .main-menu .menu2 {
+    bottom: 100px;
+  }
+  .main-menu .hr1 hr {
+    height: 1230px;
+  }
+  .main-menu .hr2 hr {
+    left: 728px;
+    height: 2400px;
+  }
+  .main-menu hr {
+    width: 550px;
+  }
+  .main-menu .bebca1 img {
+    width: 120px;
+    height: 120px;
+  }
+  .main-menu .bebfri2 img {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+  }
+  .main-menu .brunchMenu .imgBrunchD img {
+    width: 96px;
+    height: 80px;
+  }
+  .advComida {
+    font-size: 30px;
+    bottom: 550px;
+  }
 }
 @media (max-width: 600px) {
   .cafeEncabezado h2 {
     font-size: 42px;
     top: 98px;
   }
-  .parrafoCafe p {
-    font-size: 38px;
+  .contenidoCafe div p {
+    font-size: 2.37em;
+  }
+  .main-menu {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .main-menu article {
+    font-size: 40px;
+  }
+  .main-menu article h2 {
+    font-size: 46px;
+  }
+  .main-menu article .optBebidasCalientes {
+    font-size: 40px;
+  }
+  .main-menu .menu1 {
+    bottom: 650px;
+  }
+  .main-menu .menu2 {
+    bottom: 100px;
+  }
+  .main-menu .hr1 hr {
+    height: 1730px;
+  }
+  .main-menu .hr2 hr {
+    height: 3800px;
+  }
+  .main-menu .bebca1 img {
+    width: 140px;
+    height: 130px;
+  }
+  .main-menu .bebfri2 img {
+    width: 110px;
+    height: 88px;
+    position: relative;
+    top: 10px;
+  }
+  .main-menu .brunchMenu .imgBrunchD img {
+    width: 100px;
+    height: 90px;
+  }
+  .advComida {
+    font-size: 40px;
+    bottom: 500px;
   }
 }
 @media (max-width: 425px) {
   .cafeEncabezado h2 {
-    font-size: 46px;
+    font-size: 65px;
     top: 98px;
   }
-  .contenidoCafe div {
-    font-size: 42px;
-  }
   .contenidoCafe div p {
-    padding-left: 140px;
-    padding-right: 140px;
-    font-size: 42px;
+    font-size: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .main-menu {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    text-align: center;
+    grid-template-areas: "bebca1" "bebfri2" "menu1" "menu2";
+  }
+  .main-menu article {
+    font-size: 65px;
+  }
+  .main-menu article h2 {
+    font-size: 72px;
+  }
+  .main-menu article .optBebidasCalientes {
+    font-size: 65px;
+  }
+  .main-menu article p {
+    padding-bottom: 20px;
+  }
+  .main-menu article h4, .main-menu article address div p, address div .main-menu article p {
+    padding-bottom: 20px;
+  }
+  .main-menu .menu1 {
+    bottom: 0px;
+  }
+  .main-menu .menu2 {
+    bottom: 0px;
+  }
+  .main-menu hr {
+    width: 0px;
+  }
+  .main-menu .hr1 hr {
+    height: 0px;
+  }
+  .main-menu .hr2 hr {
+    height: 0px;
+  }
+  .main-menu .bebca1 img {
+    width: 210px;
+    height: 200px;
+  }
+  .main-menu .bebfri2 img {
+    width: 180px;
+    height: 160px;
+    position: relative;
+    top: 10px;
+  }
+  .main-menu .brunchMenu .imgBrunchD img {
+    width: 180px;
+    height: 150px;
+  }
+  .advComida {
+    font-size: 55px;
+    bottom: 0px;
+    padding: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .recTitulo {
+    font-size: 36px;
   }
 }
 @media (max-width: 768px) {
   .recTitulo {
-    font-size: 38px;
+    font-size: 46px;
     padding-top: 80px;
     padding-bottom: 40px;
-  }
-  .recomendaiones-contenido {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 420px 420px 420px;
-    min-width: 1440px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    align-content: center;
-    grid-column-gap: 95px;
-    grid-row-gap: 90px;
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
-  }
-  .recomendaiones-contenido div img {
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-  }
-  .recomendaiones-contenido div h5 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 550px) {
-  .recTitulo {
-    font-size: 44px;
   }
   .recomendaiones-contenido {
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-template-rows: 490px 490px 490px;
+    grid-template-rows: 480px 480px 480px;
     min-width: 1440px;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 200px;
     align-content: center;
     grid-column-gap: 95px;
-    grid-row-gap: 90px;
+    grid-row-gap: 150px;
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   }
   .recomendaiones-contenido div img {
     width: 100%;
-    height: 400px;
+    height: 480px;
     object-fit: cover;
   }
   .recomendaiones-contenido div h5 {
     font-size: 38px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .recTitulo {
     font-size: 50px;
+  }
+  .recomendaiones-contenido {
+    display: grid;
+    grid-template-columns: 530px 530px;
+    grid-template-rows: 495px 495px 495px;
+    min-width: 1440px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    align-content: center;
+    grid-column-gap: 95px;
+    grid-row-gap: 170px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+  .recomendaiones-contenido div img {
+    width: 100%;
+    height: 495px;
+    object-fit: cover;
+  }
+  .recomendaiones-contenido div h5 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .recTitulo {
+    font-size: 60px;
     padding-top: 80px;
     padding-bottom: 40px;
   }
   .recomendaiones-contenido {
     display: grid;
-    grid-template-columns: 900px;
-    grid-template-rows: 700px;
+    grid-template-columns: 1200px;
+    grid-template-rows: 900px;
     min-width: 1440px;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 240px;
     align-content: center;
-    grid-row-gap: 110px;
+    grid-row-gap: 220px;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
   }
   .recomendaiones-contenido div img {
     width: 100%;
-    height: 600px;
+    height: 900px;
     object-fit: cover;
   }
   .recomendaiones-contenido div h5 {
-    font-size: 50px;
+    font-size: 55px;
     padding-top: 40px;
   }
 }
@@ -1199,11 +1396,11 @@ article .finalText p:last-child {
 }
 @media (max-width: 600px) {
   .main-reservas {
-    grid-template-columns: 900px;
-    grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
+    grid-template-columns: 1130px;
+    grid-template-rows: 180px 140px 140px 140px 140px 350px 200px;
     grid-column-gap: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 140px;
     grid-template-areas: "titulo" "name" "last-name" "phone" "email" "descrip" "button";
   }
   .main-reservas h4, .main-reservas address div p, address div .main-reservas p {
@@ -1215,39 +1412,45 @@ article .finalText p:last-child {
     padding-top: 80px;
   }
   .main-reservas div label {
-    font-size: 40px;
+    font-size: 45px;
   }
   .main-reservas div input {
-    height: 60px;
+    height: 65px;
+  }
+  .main-reservas .div-description input {
+    height: 200px;
   }
   .main-reservas button {
-    width: 900px;
+    font-size: 40px;
+    width: 1130px;
+    height: 85px;
   }
 }
 @media (max-width: 425px) {
   .main-reservas {
-    grid-template-columns: 1100px;
-    grid-template-rows: 180px 140px 140px 140px 140px 250px 200px;
-    grid-column-gap: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    grid-template-columns: 1300px;
+    grid-template-rows: 100px 140px 140px 140px 140px 250px 200px;
+    grid-row-gap: 130px;
+    padding-top: 70px;
+    padding-bottom: 200px;
     margin: 0;
   }
   .main-reservas h4, .main-reservas address div p, address div .main-reservas p {
-    font-size: 60px;
+    font-size: 62px;
     padding-top: 50px;
     padding-bottom: 30px;
   }
   .main-reservas button {
-    width: 1100px;
-    font-size: 40px;
+    width: 1300px;
+    height: 100px;
+    font-size: 50px;
   }
   .main-reservas div label {
-    font-size: 42px;
+    font-size: 55px;
     padding-top: 80px;
   }
   .main-reservas div input {
-    height: 70px;
+    height: 98px;
   }
 }
 
