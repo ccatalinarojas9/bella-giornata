@@ -18,12 +18,12 @@ header {
   top: 0;
   left: 0;
   flex-wrap: wrap;
-  z-index: 1112;
+  z-index: 100000;
 }
 header h1 {
   text-decoration: none;
   font-family: "Oooh Baby", cursive;
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
   color: #1f6c1b;
   font-size: 50px;
@@ -67,7 +67,7 @@ body {
 }
 
 .principal {
-  background-image: url("../assets/img/foto-pagina-principal.png");
+  background-image: url("https://images.unsplash.com/photo-1621523133136-cea844f32bdf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
