@@ -19,7 +19,7 @@ header{
         font-weight: 300;
         font-style: normal;
         color: map-get($colores, letraPrincipalNav );
-        font-size: 50px;
+        font-size: 45px;
         padding-left: 50px;
         margin-top: 15px;
         position: relative;
@@ -36,7 +36,7 @@ header{
         font-size: 12px;
         padding-left: 50px;
         position: relative;
-        bottom: 43px;
+        bottom: 38px;
     }
     .navBar{
         display: flex;
@@ -96,8 +96,7 @@ header{
             height: 180px;
             text-align: center;
         }
-        
-        }
+    }
         .presentacion{
         text-decoration: none;
         justify-content: center;
