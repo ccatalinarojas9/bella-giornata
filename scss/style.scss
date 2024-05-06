@@ -19,13 +19,13 @@ header{
         font-weight: 300;
         font-style: normal;
         color: map-get($colores, letraPrincipalNav );
-        font-size: 45px;
+        font-size: 40px;
         padding-left: 50px;
         margin-top: 10px;
         position: relative;
-        bottom: 20px;
+        bottom: 15px;
         &:first-letter{
-        font-size: 53px;
+        font-size: 45px;
         }
     }
     h3{
@@ -36,7 +36,7 @@ header{
         font-size: 12px;
         padding-left: 54px;
         position: relative;
-        bottom: 35px;
+        bottom: 25px;
     }
     .navBar{
         display: flex;
@@ -64,8 +64,8 @@ header{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-width: 1440px;
-        height: 90vh;
+        max-width: 100%;
+        height: 95vh;
         position: relative;
         div{
             background-color: #9c7591c1;
