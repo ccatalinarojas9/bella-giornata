@@ -6,7 +6,7 @@ header{
     @include flex (row, space-between, center, none);
     padding-top: 0px;
     min-width: 1440px;
-    height: 85px;
+    height: 95px;
     background-color: map-get($colores,backgroundNav);
     position:sticky;
     top:0;
@@ -36,7 +36,7 @@ header{
         font-size: 12px;
         padding-left: 54px;
         position: relative;
-        bottom: 25px;
+        bottom: 18px;
     }
     .navBar{
         display: flex;
@@ -64,7 +64,7 @@ header{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        max-width: 100%;
+        min-width: 1440px;
         height: 95vh;
         position: relative;
         div{
@@ -326,7 +326,7 @@ header{
                 p:first-child{
                     font-family: "Oooh Baby", cursive;
                     font-size: 32px;
-                    font-weight: 800;
+                    font-weight: 300;
                 }
                 p:last-child{
                     font-size: 14px;
