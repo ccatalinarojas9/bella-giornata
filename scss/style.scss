@@ -1,6 +1,6 @@
 @import "./utilities/_mapas.scss";
-@import "./utilities/mixins";
-@import "./base/reset";
+@import "./utilities/_mixins";
+@import "./base/_reset";
 
 header{
     @include flex (row, space-between, center, none);
